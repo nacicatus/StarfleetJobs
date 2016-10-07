@@ -88,11 +88,13 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let doctorToBeRegistered = Doctor(firstName: firstName, lastName: lastName, password: password, employeeID: employeeIdentification)
         
         for doc in doctors {
-            if doctorToBeRegistered.employeeID != doc.employeeID {
+            if doc.employeeID != doctorToBeRegistered.employeeID {
                 // register doctor
                 let realm = try! Realm()
                 try! realm.write {
                     realm.add(doctorToBeRegistered)
+                    print(doctors)
+                    self.dismissViewControllerAnimated(true, completion: nil)
                 }
             } else {
                 displayAlertMessage("This doctor is already registered")

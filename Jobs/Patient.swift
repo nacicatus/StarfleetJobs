@@ -16,7 +16,6 @@ class Patient: Object {
    
     dynamic var hospitalId = ""
     dynamic var admissionId = ""
-    dynamic var profilePicture: UIImage!
     dynamic var workingDiagnosis = ""
     
     var tasks = List<Task>()

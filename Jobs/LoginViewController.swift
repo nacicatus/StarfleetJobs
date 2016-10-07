@@ -32,6 +32,23 @@ class LoginViewController: UIViewController {
         if employeeIdentification.isEmpty || password.isEmpty {
             displayAlertMessage("All Fields are required")
         }
+        
+        
+        // validate doctors from realm
+        let doctors: [Doctor] = {
+            let realm = try! Realm()
+            return Array(realm.objects(Doctor))
+        }()
+
+        for doc in doctors {
+            if doc.employeeID == employeeIdentification && doc.password == password {
+                displayAlertMessage("Success!")
+            } else {
+                displayAlertMessage("Failure!")
+            }
+        }
+        
+        
     }
     
     func displayAlertMessage(userMessage: String) {
