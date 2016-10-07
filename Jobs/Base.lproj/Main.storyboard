@@ -425,11 +425,12 @@
                     <connections>
                         <outlet property="employeeIdTextField" destination="2OS-sz-OI0" id="Erg-OB-FAW"/>
                         <outlet property="passwordTextField" destination="9UM-rG-2re" id="xY2-du-kOq"/>
+                        <segue destination="Pr5-Hw-TrR" kind="show" identifier="showTasks" id="365-ww-sed"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sc3-Xn-eQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122.5" y="-387"/>
+            <point key="canvasLocation" x="1978.5" y="-567"/>
         </scene>
         <!--Create Task View Controller-->
         <scene sceneID="Dcb-gF-ZcZ">

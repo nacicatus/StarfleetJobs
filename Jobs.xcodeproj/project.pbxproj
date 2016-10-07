@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		22920E68673B01753DDB1A99 /* Pods_Jobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F3C136B10D739527D98588 /* Pods_Jobs.framework */; };
 		F863E68E1DA6FCC20093DED4 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F863E68D1DA6FCC20093DED4 /* TaskCell.swift */; };
-		F863E6901DA708A40093DED4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F863E68F1DA708A40093DED4 /* User.swift */; };
 		F868B59F1DA6F307006A0466 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868B59E1DA6F307006A0466 /* CreateTaskViewController.swift */; };
 		F87892AF1DA775F700DF0893 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87892AE1DA775F700DF0893 /* Doctor.swift */; };
-		F87892B11DA776AB00DF0893 /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87892B01DA776AB00DF0893 /* Department.swift */; };
-		F87892B31DA778D800DF0893 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87892B21DA778D800DF0893 /* Patient.swift */; };
 		F87892B51DA77D0600DF0893 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87892B41DA77D0600DF0893 /* LoginViewController.swift */; };
 		F87892B71DA7828700DF0893 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87892B61DA7828700DF0893 /* RegisterViewController.swift */; };
 		F8B5A9011DA6ECB4006FE898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B5A9001DA6ECB4006FE898 /* AppDelegate.swift */; };
@@ -29,11 +26,8 @@
 		ABD14794F9CD6A1D03AF550D /* Pods-Jobs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jobs/Pods-Jobs.debug.xcconfig"; sourceTree = "<group>"; };
 		E7F3C136B10D739527D98588 /* Pods_Jobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F863E68D1DA6FCC20093DED4 /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
-		F863E68F1DA708A40093DED4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F868B59E1DA6F307006A0466 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		F87892AE1DA775F700DF0893 /* Doctor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
-		F87892B01DA776AB00DF0893 /* Department.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
-		F87892B21DA778D800DF0893 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		F87892B41DA77D0600DF0893 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F87892B61DA7828700DF0893 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F8B5A8FD1DA6ECB4006FE898 /* Jobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,9 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				F87892AE1DA775F700DF0893 /* Doctor.swift */,
-				F87892B01DA776AB00DF0893 /* Department.swift */,
-				F87892B21DA778D800DF0893 /* Patient.swift */,
-				F863E68F1DA708A40093DED4 /* User.swift */,
 				F8D0B1EC1DA6F93700008933 /* Task.swift */,
 			);
 			name = Models;
@@ -264,14 +255,11 @@
 				F8D0B1ED1DA6F93700008933 /* Task.swift in Sources */,
 				F87892B71DA7828700DF0893 /* RegisterViewController.swift in Sources */,
 				F8B5A9011DA6ECB4006FE898 /* AppDelegate.swift in Sources */,
-				F87892B31DA778D800DF0893 /* Patient.swift in Sources */,
-				F863E6901DA708A40093DED4 /* User.swift in Sources */,
 				F8C0F6FF1DA6F0C70085EF97 /* TasksViewController.swift in Sources */,
 				F868B59F1DA6F307006A0466 /* CreateTaskViewController.swift in Sources */,
 				F863E68E1DA6FCC20093DED4 /* TaskCell.swift in Sources */,
 				F87892AF1DA775F700DF0893 /* Doctor.swift in Sources */,
 				F87892B51DA77D0600DF0893 /* LoginViewController.swift in Sources */,
-				F87892B11DA776AB00DF0893 /* Department.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,10 +15,10 @@ class CreateTaskViewController: UITableViewController {
     @IBOutlet weak var taskPriority: UISegmentedControl!
     @IBOutlet weak var taskConsultantType: UISegmentedControl!
     
-    let users: [User] = {
-        let realm = try! Realm()
-        return Array(realm.objects(User))
-    }()
+//    let users: [User] = {
+//        let realm = try! Realm()
+//        return Array(realm.objects(User))
+//    }()
     
     
     @IBAction func createTask(sender: UIButton) {
@@ -35,10 +35,10 @@ class CreateTaskViewController: UITableViewController {
         super.viewWillAppear(animated)
         
 //        taskConsultantType.removeAllSegments()
-        for user in users {
-            taskConsultantType.insertSegmentWithTitle(user.name, atIndex: taskConsultantType.numberOfSegments, animated: false)
-        }
-        taskConsultantType.selectedSegmentIndex = 0
+//        for user in users {
+//            taskConsultantType.insertSegmentWithTitle(user.name, atIndex: taskConsultantType.numberOfSegments, animated: false)
+//        }
+//        taskConsultantType.selectedSegmentIndex = 0
         
         taskTitle.becomeFirstResponder()
     }

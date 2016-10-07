@@ -35,14 +35,14 @@ class LoginViewController: UIViewController {
         
         
         // validate doctors from realm
-        let doctors: [Doctor] = {
-            let realm = try! Realm()
-            return Array(realm.objects(Doctor))
-        }()
-
+        
+        let realm = try! Realm()
+        let doctors = realm.objects(Doctor)
+        
         for doc in doctors {
             if doc.employeeID == employeeIdentification && doc.password == password {
                 displayAlertMessage("Success!")
+                performSegueWithIdentifier("showTasks", sender: self)
             } else {
                 displayAlertMessage("Failure!")
             }

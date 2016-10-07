@@ -81,8 +81,8 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         // validate doctors from realm
         let doctors: [Doctor] = {
-            let realm = try! Realm()
-            return Array(realm.objects(Doctor))
+            let realmOfDoctors = try! Realm()
+            return Array(realmOfDoctors.objects(Doctor))
         }()
         
         let doctorToBeRegistered = Doctor(firstName: firstName, lastName: lastName, password: password, employeeID: employeeIdentification)
